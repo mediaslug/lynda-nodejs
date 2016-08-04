@@ -23,7 +23,7 @@ fs.readdir("./lib", function(err, files) {
             // generate full path to file
             file = path.join(__dirname, "lib", fileName);
 
-            // get the stats on the file
+            // get the stats on the file (synchronously), which will tell me if it is a file or a directory (and few other things)
             var stats = fs.statSync(file);
 
             // determine if the file exists and is not a system file
