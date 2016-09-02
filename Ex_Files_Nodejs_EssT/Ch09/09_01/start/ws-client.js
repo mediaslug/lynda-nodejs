@@ -1,3 +1,15 @@
+var ws = new WebSocket("ws://localhost:3000")
+ws.onopen = function() {
+    setTitle("Connected to Cyber Chat")
+}
+
+ws.onclose = function() {
+    setTitle("disconnected. no soup for you.")
+}
+
+ws.onmessage = function(payload) { // payload is the object sent to the function, which includes the message
+    printMessage(payload.data);
+}
 
 document.forms[0].onsubmit = function () {
     var input = document.getElementById('message');

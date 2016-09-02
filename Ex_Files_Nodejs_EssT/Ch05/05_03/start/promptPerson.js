@@ -20,7 +20,7 @@ rl.question("What is the name of a real person? ", function(answer) {
 	// asynchronously, there is no need to add a callback function. we also want to make sure that we have the file before we prompt the user.
 	// need to have the file before we start appending to the file
 
-	fs.writeFileSync(realPerson.name + ".md", `${realPerson.name}\n=======================\n\n`);
+	fs.writeFileSync(realPerson.name + ".md", `${realPerson.name}\n=======================\n\n`); // pass file name and then contents
 
 	rl.setPrompt(`What would ${realPerson.name} say? `);
 

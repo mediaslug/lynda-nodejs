@@ -10,5 +10,8 @@
     "Websocket"
   ],
   "author": "Alex Banks <alex@moonhighway.com> (http://www.moonhighway.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^1.1.1"
+  }
 }

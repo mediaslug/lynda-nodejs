@@ -15,6 +15,8 @@ ws.onmessage = function(payload) {
 
 document.forms[0].onsubmit = function () {
     var input = document.getElementById('message');
+
+    // send the input back to the sockets server
     ws.send(input.value);
     input.value = '';
 };
