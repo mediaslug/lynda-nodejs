@@ -1,4 +1,6 @@
-var inventoryData = require('../data-sample/inventory');
+// this is our SUT (System Under Test)
+
+var inventoryData = require('../data/inventory');
 var warehouse = require('./warehouse');
 
 function findItem(sku) {

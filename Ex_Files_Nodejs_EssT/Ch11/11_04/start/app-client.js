@@ -1,3 +1,4 @@
+
 var $ = require("jquery");
 var printTerms = require("./lib/printTerms");
 

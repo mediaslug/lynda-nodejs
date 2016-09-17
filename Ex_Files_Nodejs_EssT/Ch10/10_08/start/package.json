@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "chai": "^3.4.0",
-    "rewire": "^2.3.4"
+    "cheerio": "^0.22.0",
+    "rewire": "^2.3.4",
+    "supertest": "^2.0.0"
   }
 }
